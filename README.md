@@ -2,8 +2,12 @@
 
 Bounding box prediction in object tracking using [Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html). The model utilizes reinforcement learning to choose the best region for a given frame in the video. The model uses a Deep Q-network (DQN) to learn a state-action value function over numerous transitions with epsilon-greedy policy. From learning the optimal value function, we indirectly converge to an optimal policy. The optimal policy will allow the model to select the region that maximizes the value function for each given current state. 
 
-<img src="./readme_images/15555_initial.png" width="288">
-<img src="./readme_images/Result-1.png" width="288">
+<p align="center">
+  <img width="300" src="./readme_images/15555_initial.png">
+</p>
+<p align="center">
+  <img width="300" src="./readme_images/Result-1.png">
+</p>
 
 The model is designed to learn from video frames and bounding box annotation from the top-down view video captured from an entrance of a parking structure. This model can be extended to other videos of similar application, but the input structure needs be prepared. 
 
